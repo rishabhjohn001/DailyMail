@@ -26,7 +26,7 @@ public class Scenario1 extends Base {
         closeBrowser();
     }
 
-    @Test
+    @Test(timeOut = 50000)
     public void TC1()
     {
         LandingPage lp = new LandingPage(driver);

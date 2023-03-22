@@ -30,19 +30,19 @@ public class LandingPage {
     }
     public void clickSubCategory(String mainCategoryText, String subCategoryText){
         List<WebElement> categories = driver.findElements(mainCategoryCss);
-        for(WebElement category : categories)
+        for(int i=0; i<categories.size(); i++)
         {
-            if(category.getText() == mainCategoryText)
+            if(categories.get(i).getText().equalsIgnoreCase(mainCategoryText))
             {
-                WebElement hoverable = category.findElement(expandIconCss);
+                WebElement hoverable = categories.get(i).findElement(expandIconCss);
                 Actions actions = new Actions(driver);
-                actions.moveToElement(hoverable);
-                List<WebElement> subCategories = category.findElements(subCategoryCss);
-                for(WebElement subCategory : subCategories)
+                actions.moveToElement(hoverable).perform();
+                List<WebElement> subCategories = categories.get(i).findElements(subCategoryCss);
+                for(int j=0;j< subCategories.size();j++)
                 {
-                    if(subCategory.getText() == subCategoryText)
+                    if(subCategories.get(j).getText().equalsIgnoreCase(subCategoryText))
                     {
-                        subCategory.click();
+                        subCategories.get(j).click();
                         break;
                     }
                 }

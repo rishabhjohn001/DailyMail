@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Daily Mail Automation Test Suite">
+    <test name="Validate Main Category = Tech and Sub Category = TV page.">
+        <classes>
+            <class name="org.example.Scenario1"/>
+        </classes>
+    </test>
+</suite>
