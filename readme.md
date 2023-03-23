@@ -24,3 +24,11 @@ Execute mvn compile
 
 ####Step 6 -
 Execute mvn test
+
+
+####Version of JAVA and Maven on which scripting was done.
+java 16.0.1 2021-04-20
+Java(TM) SE Runtime Environment (build 16.0.1+9-24)
+Java HotSpot(TM) 64-Bit Server VM (build 16.0.1+9-24, mixed mode, sharing)
+
+Apache Maven 3.8.4 (9b656c72d54e5bacbed989b64718c159fe39b537)
