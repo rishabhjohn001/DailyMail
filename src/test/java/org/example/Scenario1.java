@@ -33,6 +33,7 @@ public class Scenario1 extends Base {
         lp.acceptCookie();
         lp.clickSubCategory("Tech", "TV");
         TechTvPage techTvPage = new TechTvPage(driver);
+        Assert.assertTrue(techTvPage.isTechTvPageLoaded());
         Assert.assertTrue(techTvPage.isPageHeaderPresent());
         Assert.assertTrue(techTvPage.isPageDescriptionPresent());
         Assert.assertTrue(techTvPage.isArticleSectionPresent());

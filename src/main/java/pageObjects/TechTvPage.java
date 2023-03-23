@@ -23,6 +23,10 @@ public class TechTvPage {
     By pageDescriptionXpath = By.xpath("//div[@data-testid = 'articles-section-block']//parent::div//child::p");
 
 
+    public boolean isTechTvPageLoaded(){
+        return (driver.getCurrentUrl().equalsIgnoreCase("https://www.dailymail.co.uk/best-buys/tech/tv/"));
+    }
+
     public boolean isPageHeaderPresent(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(pageHeaderXpath));
         return driver.findElement(pageHeaderXpath).isDisplayed();
