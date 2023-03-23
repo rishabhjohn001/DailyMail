@@ -5,7 +5,7 @@
 * Maven should be installed.
 * Chrome Browser should be installed.
 * Selenium Driver should be downloaded.
-* Clone the code from GIT.
+* Clone the code from [GIT](https://github.com/rishabhjohn001/DailyMail)
 
 ####Step 1 - 
 Open to command prompt(windows)/terminal(mac).
